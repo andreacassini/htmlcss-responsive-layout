@@ -28,7 +28,7 @@
 }
 /* MOBILE FIRST under 768px */
 /* HEADER */
-header{
+#header{
     background-color: lightblue;
 }
 
@@ -112,6 +112,12 @@ header{
 #get-started{
     background-color: violet;
 }
+
+/* FOOTER */
+#footer{
+    background-color: darkgrey;
+}
+
 
             /* SCALING */
                 /* TABLET */
