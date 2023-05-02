@@ -10,6 +10,10 @@
     margin: 0 auto;
 }
 /* UTILITIES */
+.flex{
+    display: flex;
+    flex-direction: column;
+}
 /* MOBILE FIRST under 768px */
 /* HEADER */
 
@@ -69,6 +73,9 @@ header{
     }
     .col-30{
         width: calc(100% / 3 - 20px);
+    }
+    .content{
+        flex-direction: row;
     }
 }
 /* DESKTOP */
