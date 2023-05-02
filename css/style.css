@@ -10,13 +10,24 @@
     margin: 0 auto;
 }
 /* UTILITIES */
-.flex{
+.flex-1{
     display: flex;
     flex-direction: column;
 }
+.flex-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
 /* MOBILE FIRST under 768px */
 /* HEADER */
-
 header{
     background-color: lightblue;
 }
@@ -47,10 +58,11 @@ header{
     background-color: grey;
     display: none;
 }
+
 /* MAIN */
-.row{
-    display: flex;
-    flex-direction: column;
+/* DEMO */
+#demo{
+    background-color: white;
 }
 .col-30-double, .col-30{
     width: calc(100% - 20px);
@@ -59,41 +71,88 @@ header{
     background-color: yellow;
 }
 
-/* TABLET */
-@media screen and (min-width:768px){
-    .container{
-        max-width: 750px;
-    }
-    .row{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .col-30-double{
-        width: calc(100% / 3 * 2 - 20px);
-    }
-    .col-30{
-        width: calc(100% / 3 - 20px);
-    }
-    .content{
-        flex-direction: row;
-    }
+/* PLANNING */
+#planning{
+    background-color: violet;
 }
-/* DESKTOP */
-@media screen and (min-width:991px){
-    .container{
-        max-width: 950px;
-    }
-    .hamburger{
-        display: none;
-    }
-    .extended-menu{
-        display: block;
-    }
+.col-50{
+    width: calc(100% - 20px);
+    height: 200px;
+    margin: 10px;
+    background-color: green;
+}
 
+/* PARTNERS */
+#partners{
+    background-color: white;
 }
-/* LARGE DESKTOP */
-@media screen and (min-width:1200px){
-    .container{
-        max-width: 1170px;
-    }
+.col-100{
+    width: calc(100% - 20px);
+    margin: 10px;
+    background-color: aqua;
 }
+
+/* BENEFITS */
+#benefits{
+    background-color: violet;
+}
+.col-30-b{
+    width: calc(100% - 20px);
+    height: 200px;
+    margin: 10px;
+    background-color: yellow;
+}
+
+
+            /* SCALING */
+                /* TABLET */
+                @media screen and (min-width:768px){
+                    .container{
+                        max-width: 750px;
+                    }
+                    .row{
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                    .col-30-double{
+                        width: calc(100% / 3 * 2 - 20px);
+                    }
+                    .col-30{
+                        width: calc(100% / 3 - 20px);
+                    }
+                    .flex-1{
+                        flex-direction: row;
+                    }
+                    .col-30-b{
+                        width: calc(100% / 2 - 20px);
+                    }
+                }
+                /* DESKTOP */
+                @media screen and (min-width:991px){
+                    .container{
+                        max-width: 950px;
+                    }
+                    .hamburger{
+                        display: none;
+                    }
+                    .extended-menu{
+                        display: block;
+                    }
+                    .col-50{
+                        width: calc(100% - 20px);
+                    }
+                    .flex-2{
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                    .col-30-b{
+                        width: calc(100% / 3 - 20px);
+                    }
+
+                }
+                /* LARGE DESKTOP */
+                @media screen and (min-width:1200px){
+                    .container{
+                        max-width: 1170px;
+                    }
+                }
