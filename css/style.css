@@ -17,6 +17,7 @@ body, button{
 .flex-tablet{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .flex-desktop{
@@ -27,6 +28,7 @@ body, button{
 .row{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .text-center{
@@ -43,6 +45,22 @@ ul li{
     padding-right: 30px;
 }
 
+.left-content{
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+h3{
+    color: rgba(0,132,253,255);
+}
+
+.button{
+    background-color: rgba(0,132,253,255);
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
 /* MOBILE FIRST under 768px */
 /* HEADER */
 #header{
@@ -61,7 +79,7 @@ ul li{
 .logo-header, .menu-header{
     color: white;
     padding-top: 2px;
-    margin: 10px 10px;
+    margin: 10px 20px;
 }
 
 .menu-header{
@@ -96,12 +114,19 @@ ul li{
 /* DEMO */
 #demo{
     background-color: white;
+    margin-top: 40px;
 }
 .col-30-double, .col-30{
     width: calc(100% - 20px);
-    height: 200px;
-    margin: 10px;
-    background-color: yellow;
+    margin: 15px;
+    padding: 40px;
+    background-color: rgba(181,221,255,255);
+    border-radius: 5%;
+}
+
+#phone{
+    width: 400px;
+    max-width: 100%;
 }
 
 /* PLANNING */
