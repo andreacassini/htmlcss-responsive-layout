@@ -65,6 +65,10 @@ ul li{
 #planning, #benefits, #get-started{
     background-color: rgba(150,146,229,255);
 }
+
+.cursive{
+    font-style: italic;
+}
 /* MOBILE FIRST under 768px */
 /* HEADER */
 #header{
@@ -166,20 +170,34 @@ ul li{
 }
 .right-content-planning{
     background-color: white;
-    border-radius: 10%;
+    border-radius: 5%;
     text-align: center;
-    margin: 0 30px;
 }
 /* PARTNERS */
-#partners{
+#testimonials{
     background-color: white;
 }
 .col-100{
     width: calc(100% - 20px);
     margin: 10px;
-    background-color: aqua;
+    padding: 40px;
+}
+.col-100-testimonials{
+    width: calc(100% - 20px);
+    margin: 10px;
+    padding: 40px;
+    background-color: rgba(150,146,229,255);
+    border-radius: 12%;
+}
+.img-testimonials{
+    width: 100%;
+    border-radius: 50%;
 }
 
+.right-content-testimonials{
+    color: white;
+    line-height: 2;
+}
 /* BENEFITS */
 .col-30-b{
     width: calc(100% - 20px);
@@ -187,7 +205,6 @@ ul li{
     margin: 10px;
     background-color: yellow;
 }
-
 /* ABOUT US */
 #about-us{
     background-color: white;
