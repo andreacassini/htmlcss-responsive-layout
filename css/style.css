@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-body, button{
+body, a{
     font-family: 'Noto Sans JP', sans-serif;
 }
 /* UTILITIES */
@@ -26,6 +26,7 @@ body, button{
 }
 
 .row{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,12 +51,26 @@ ul li{
     font-size: 20px;
 }
 
-.button{
-    background-color: rgba(0,132,253,255);
+.apple{
+    margin-right: 10px;
+}
+
+.button, .button-apple{
     text-decoration: none;
     color: white;
     padding: 10px 40px;
     border-radius: 30px;
+}
+
+.button-apple{
+    padding: 10px 80px;
+}
+.blue{
+    background-color: rgba(0,132,253,255);
+}
+
+.violet{
+    background-color: rgba(150,146,229,255);
 }
 
 .h3-demo, .icons-demo{
@@ -69,10 +84,44 @@ ul li{
 .cursive{
     font-style: italic;
 }
+
+.margin-bottom-40{
+    margin-bottom: 40px;
+}
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+p{
+    font-weight: 500;
+}
+
+h2{
+    font-size: 35px;
+}
+.w-200{
+    font-weight: 200;
+}
+
+.w-300{
+    font-weight: 300;
+}
+.w-400{
+    font-weight: 400;
+}
+.violet-text{
+    color: rgba(150,146,229,255);
+}
+
+.l-h{
+    line-height: 1.8;
+}
 /* MOBILE FIRST under 768px */
 /* HEADER */
 #header{
     background-color: rgba(0,132,253,255);
+    padding: 5px 0;
 }
 
 .header-flex{
@@ -122,22 +171,29 @@ ul li{
 /* DEMO */
 #demo{
     background-color: white;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 .col-30-double, .col-30{
     width: calc(100% - 20px);
-    margin: 10px;
-    padding: 40px;
     background-color: rgba(181,221,255,255);
     border-radius: 5%;
+    color: rgb(82, 101, 117);
+    line-height: 1.8;
 }
 
+.col-30-double{
+    padding-top: 20px;
+}
 .col-30{
     text-align: center;
+    padding: 40px;
+    margin: 10px;
 }
 #phone{
     width: 400px;
     max-width: 100%;
+    transform: translateY(8px);
 }
 
 .icons-demo{
@@ -147,8 +203,14 @@ ul li{
 
 .h3-demo{
     margin-bottom: 25px;
+    font-size: 30px;
 }
 /* PLANNING */
+
+.h3-plan{
+    font-size: 30px;
+    margin-top: 50px;
+}
 .col-50{
     width: calc(100% - 20px);
     margin-left: 10px;
@@ -163,6 +225,7 @@ ul li{
 
 .left-content-planning, .right-content-planning{
     padding: 40px;
+    line-height: 1.8;
 }
 
 .left-content-planning{
@@ -173,9 +236,20 @@ ul li{
     border-radius: 5%;
     text-align: center;
 }
-/* PARTNERS */
+
+.h4-app-dev{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.arrow-down{
+    background-color: rgba(150,146,229,255);
+    border-radius: 50%;
+}
+/* TESTIMONIALS */
 #testimonials{
     background-color: white;
+    text-align: center;
 }
 .col-100{
     width: calc(100% - 20px);
@@ -189,21 +263,38 @@ ul li{
     background-color: rgba(150,146,229,255);
     border-radius: 12%;
 }
-.img-testimonials{
-    width: 100%;
+.img-testimonials, .img-about{
+    height: 100%;
+    width: auto;
+    margin-left: -25%;
+}
+
+.left-content-testimonials{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
     border-radius: 50%;
 }
 
+.h4-testimonials{
+    font-size: 18px;
+    margin-top: 30px;
+}
+h1{
+    color: rgba(252,192,95,255);
+}
 .right-content-testimonials{
     color: white;
     line-height: 2;
+    font-size: 17px;
 }
 /* BENEFITS */
 .col-30-b{
     width: calc(100% - 20px);
-    height: 200px;
     margin: 10px;
-    background-color: yellow;
+    background-color: white;
+    border-radius: 15px;
 }
 /* ABOUT US */
 #about-us{
@@ -211,11 +302,14 @@ ul li{
 }
 
 /* GET STARTED */
-
+#get-started{
+    color: white;
+}
 
 /* FOOTER */
 #footer{
     background-color: rgba(51,50,50,255);
+    color: white;
 }
 
 
