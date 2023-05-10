@@ -6,7 +6,7 @@
 
 /* RULES */
 .container{
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -14,22 +14,14 @@ body, a{
     font-family: 'Noto Sans JP', sans-serif;
 }
 /* UTILITIES */
-.flex-tablet{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .flex-desktop{
     display: flex;
     flex-direction: column;
 }
 
-.row{
-    width: 100%;
+.row, .flex-tablet{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .text-center{
@@ -46,7 +38,7 @@ ul li{
     padding-right: 30px;
 }
 
-.left-content{
+.left-content-about-us{
     padding: 8px 10px;
     font-size: 20px;
 }
@@ -89,6 +81,9 @@ ul li{
     margin-bottom: 40px;
 }
 
+.margin-bottom-60{
+    margin-bottom: 60px;
+}
 .margin-top-30{
     margin-top: 30px;
 }
@@ -173,27 +168,14 @@ h2{
     background-color: white;
     margin-top: 70px;
     margin-bottom: 70px;
-}
-.col-30-double, .col-30{
-    width: calc(100% - 20px);
-    background-color: rgba(181,221,255,255);
-    border-radius: 5%;
-    color: rgb(82, 101, 117);
-    line-height: 1.8;
+    font-size: 20px;
 }
 
-.col-30-double{
-    padding-top: 20px;
-}
-.col-30{
-    text-align: center;
-    padding: 40px;
-    margin: 10px;
-}
 #phone{
     width: 400px;
-    max-width: 100%;
-    transform: translateY(8px);
+    position: relative;
+    top: 6px;
+    margin-top: 10px;
 }
 
 .icons-demo{
@@ -204,6 +186,25 @@ h2{
 .h3-demo{
     margin-bottom: 25px;
     font-size: 30px;
+}
+
+.col-30, .col-double{
+    width: calc(100% - 20px);
+    margin: 10px;
+    background-color: rgba(181,220,254,255);
+    border-radius: 20px;
+}
+
+.col-30{
+    text-align: center;
+    padding: 40px;
+}
+.left-content-demo{
+    margin: 40px;
+}
+
+.right-content-demo{
+    text-align: center;
 }
 /* PLANNING */
 
@@ -317,30 +318,33 @@ h1{
                 /* TABLET */
                 @media screen and (min-width:768px){
                     .container{
-                        max-width: 750px;
+                        max-width: 760px;
                     }
                     .row{
-                        width: 100%;
                         flex-direction: row;
                         flex-wrap: wrap;
                     }
-                    .col-30-double{
+                    .col-double{
                         width: calc(100% / 3 * 2 - 20px);
                     }
+
                     .col-30{
                         width: calc(100% / 3 - 20px);
-                    }
-                    .flex-tablet{
-                        flex-direction: row;
+                        padding: 20px;
                     }
                     .col-30-b{
                         width: calc(100% / 2 - 20px);
+
+                    }
+
+                    .right-content-demo{
+                        text-align: left;
                     }
                 }
                 /* DESKTOP */
                 @media screen and (min-width:991px){
                     .container{
-                        max-width: 950px;
+                        max-width: 980px;
                     }
                     .hamburger{
                         display: none;
@@ -351,18 +355,23 @@ h1{
                     .col-50{
                         width: calc(100% - 20px);
                     }
-                    .flex-desktop{
+                    .flex-tablet{
                         flex-direction: row;
-                        align-items: center;
                     }
                     .col-30-b{
                         width: calc(100% / 3 - 20px);
+                    }
+                    #phone{
+                        top: 145px;
                     }
 
                 }
                 /* LARGE DESKTOP */
                 @media screen and (min-width:1200px){
                     .container{
-                        max-width: 1170px;
+                        max-width: 1140px;
+                    }
+                    #phone{
+                        top: 29px;
                     }
                 }
